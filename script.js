@@ -1,96 +1,39 @@
-body{
+function showFact(){
 
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
+    let facts = [
 
-    background:linear-gradient(to right,#ff9966,#ff5e62);
+        "🍖 Luffy loves meat more than anything!",
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-}
+        "💪 He can stretch because of his Devil Fruit.",
 
-.card{
+        "🏴‍☠️ His dream is to become the Pirate King.",
 
-    background:white;
-    width:380px;
-    padding:25px;
-    border-radius:20px;
-    text-align:center;
+        "❤️ He values friendship more than treasure.",
 
-    box-shadow:0px 10px 25px rgba(0,0,0,.3);
+        "😂 Luffy often gets lost in serious situations."
+
+    ];
+
+    let random = Math.floor(Math.random()*facts.length);
+
+    document.getElementById("fact").innerHTML = facts[random];
 
 }
 
-img{
+function toggleDetails(){
 
-    width:180px;
-    height:220px;
-    object-fit:cover;
+    let details = document.getElementById("details");
 
-}
+    if(details.style.display==="none"){
 
-h1{
+        details.style.display="block";
 
-    color:#ff4500;
+    }
 
-}
+    else{
 
-h3{
+        details.style.display="none";
 
-    color:#444;
-
-}
-
-p{
-
-    text-align:left;
-
-}
-
-progress{
-
-    width:100%;
-    height:20px;
-
-}
-
-blockquote{
-
-    background:#fff3cd;
-    padding:10px;
-    border-left:5px solid orange;
-    border-radius:5px;
-
-}
-
-button{
-
-    margin:8px;
-    padding:10px 20px;
-
-    border:none;
-    border-radius:8px;
-
-    cursor:pointer;
-
-    background:#ff4500;
-    color:white;
-    font-size:15px;
-
-}
-
-button:hover{
-
-    background:#e63e00;
-
-}
-
-#fact{
-
-    margin-top:15px;
-    font-weight:bold;
-    color:green;
+    }
 
 }
