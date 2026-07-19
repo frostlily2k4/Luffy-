@@ -1,0 +1,42 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#f0f8ff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.card{
+    background:white;
+    width:320px;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+img{
+    width:180px;
+    border-radius:10px;
+}
+
+button{
+    margin-top:15px;
+    padding:10px 20px;
+    border:none;
+    background:#ff6600;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#e65c00;
+}
+
+#message{
+    margin-top:15px;
+    color:#333;
+    font-weight:bold;
+}
