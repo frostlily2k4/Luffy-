@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <title>Anime</title>
-    <link rel="stylesheet" href="./style.css">
-
-  </head>
-    
-  <body>
-  <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Favorite Anime Character</title>
+    <title>My Favorite Anime Character</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="card">
-    <img id="animeImage" src="https://upload.wikimedia.org/wikipedia/en/c/cb/Monkey_D_Luffy.png" alt="Luffy">
 
-    <h1 id="name">Monkey D. Luffy</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/en/c/cb/Monkey_D_Luffy.png" alt="Luffy">
 
-    <p><b>Anime:</b> One Piece</p>
-    <p><b>Dream:</b> Become the King of the Pirates</p>
-    <p><b>Power:</b> Gum-Gum Fruit (Hito Hito no Mi, Model: Nika)</p>
+    <h1>Monkey D. Luffy</h1>
+    <h3>🏴‍☠️ Future King of the Pirates</h3>
 
-    <button onclick="showMessage()">Why I Like Luffy</button>
+    <div id="details">
 
-    <p id="message"></p>
+        <p><strong>Anime:</strong> One Piece</p>
+        <p><strong>Birthday:</strong> May 5</p>
+        <p><strong>Age:</strong> 19</p>
+        <p><strong>Crew:</strong> Straw Hat Pirates</p>
+        <p><strong>Role:</strong> Captain</p>
+        <p><strong>Devil Fruit:</strong> Hito Hito no Mi, Model: Nika</p>
+        <p><strong>Bounty:</strong> 3,000,000,000 Berries</p>
+
+        <label>Power Level</label>
+
+        <progress value="98" max="100"></progress>
+
+        <p><strong>Favorite Quote:</strong></p>
+
+        <blockquote>
+            "I'm gonna be King of the Pirates!"
+        </blockquote>
+
+    </div>
+
+    <button onclick="showFact()">Fun Fact</button>
+
+    <button onclick="toggleDetails()">Show / Hide Details</button>
+
+    <p id="fact"></p>
+
 </div>
 
 <script src="script.js"></script>
-</body>
-</html>
-    <script  src="./script.js"></script>
 
-  </body>
-  
+</body>
 </html>
